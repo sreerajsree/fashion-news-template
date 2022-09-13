@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#000">
+    <title>Search | The Fashion Enthusiast</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P7F5HRH');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7738755295640554" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/jquery.modal.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min-v1.0.3.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="assets/css/helpers.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/cat-button.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+
+<body>
+    <div id="ex1" class="modal">
+        <div class="">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="subscribe-image h-full">
+                        <img class="h-full object-cover w-100" src="assets/img/modal/modal-1.jpg" alt="The Fashion Enthusiast Newsletter Image">
+                    </div>
+                </div>
+                <div class="col-md-7 d-flex align-items-center">
+                    <div class="p-3">
+                        <div class="subscribe-logo pt-3">
+                            <img class="mx-auto" src="assets/img/logo/logo-main.svg" alt="The Fashion Enthusiast Logo">
+                        </div>
+                        <div class="subscribe-heading">We are Always First</div>
+                        <div class="subscribe-subheading">Subscribe to our Newsletter for the latest in Fashion</div>
+                        <div class="form-group row my-3">
+                            <div class="col-md-12 mb-0">
+                                <input id="e-mail" type="text" placeholder="ENTER YOUR EMAIL" name="email" class="form-control input-box rm-border text-center">
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-md-12 px-3">
+                                <input type="submit" value="SUBMIT" class="btn btn-block btn-black text-xs rm-border">
+                            </div>
+                        </div>
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-md-12 px-3 mt-4">
+                                <a href="#">
+                                    <p class="thanks">no thanks</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-center mb-0">
+                            <div class="col-md-12 px-3 mt-5">
+                                <p class="conditions">Will be used in accordance with our <span class="footer-com"><a class="text-dec-pink" target="_blank" href="#">Privacy Terms</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="preloader-inner">
+        <div class="preloader-main-gif">
+            <div class="loader">
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-overlay"></div>
+
+    <header class="sidenav empire" id="sidenav">
+        <div class="sidenav__close">
+            <button id="sidenav__close-button" aria-label="close sidenav">
+                <svg class="sidenav__close-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40"
+                    height="40" viewBox="0 0 50 50" style=" fill:#000000;">
+                    <path
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <nav class="sidenav__menu-container">
+            <ul class="sidenav__menu" role="menubar">
+                <li>
+                    <a href="index.html" class="sidenav__menu-url pb-5">
+                        <img class="logo" src="assets/img/logo/logo-main.svg" alt="The Fashion Enthusiast Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="sidenav__menu-url">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="sidenav__menu-url">Fashion</a>
+                    <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i
+                            class='las la-angle-down'></i></button>
+                    <ul class="sidenav__menu-dropdown">
+                        <li><a href="" class="sidenav__menu-url">Trends</a></li>
+                        <li><a href="" class="sidenav__menu-url">Celebrity Style</a></li>
+                        <li><a href="" class="sidenav__menu-url">Luxury House</a></li>
+                        <li><a href="" class="sidenav__menu-url">Awards</a></li>
+                        <li><a href="" class="sidenav__menu-url">People</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidenav__menu-url">Beauty</a>
+                    <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i
+                            class='las la-angle-down'></i></button>
+                    <ul class="sidenav__menu-dropdown">
+                        <li><a href="" class="sidenav__menu-url">Cosmetics</a></li>
+                        <li><a href="" class="sidenav__menu-url">Jewellery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidenav__menu-url">Fashion Shows</a>
+                    <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i
+                            class='las la-angle-down'></i></button>
+                    <ul class="sidenav__menu-dropdown">
+                        <li><a href="" class="sidenav__menu-url">Runway</a></li>
+                        <li><a href="" class="sidenav__menu-url">Fashion Week</a></li>
+                        <li><a href="" class="sidenav__menu-url">Spring Fashion</a></li>
+                        <li><a href="" class="sidenav__menu-url">Summer Fashion</a></li>
+                        <li><a href="" class="sidenav__menu-url">Fall Fashion</a></li>
+                        <li><a href="" class="sidenav__menu-url">Winter Fashion</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidenav__menu-url">Models</a>
+                    <button class="sidenav__menu-toggle" aria-haspopup="true" aria-label="Open dropdown"><i
+                            class='las la-angle-down'></i></button>
+                    <ul class="sidenav__menu-dropdown">
+                        <li><a href="" class="sidenav__menu-url">Super Models</a></li>
+                        <li><a href="" class="sidenav__menu-url">Emerging Models</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidenav__menu-url">Designers</a>
+                </li>
+                <li>
+                    <a href="#" class="sidenav__menu-url">Advertise</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="relative">
+        <div class="nav__holder nav--sticky">
+            <div class="flex-parent container">
+                <button class="nav-icon-toggle" id="nav-icon-toggle" aria-label="Open side menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50"
+                        style=" fill:#000000;">
+                        <path
+                            d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z">
+                        </path>
+                    </svg>
+                </button>
+
+                <a href="index.html">
+                    <img class="logo" src="assets/img/logo/logo-main.svg" alt="The Fashion Enthusiast Logo">
+                </a>
+
+                <nav class="flex-child nav__wrap d-none d-lg-block">
+                    <ul class="nav__menu empire">
+                        <li class="">
+                            <a href="category.html">Fashion</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Beauty</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Fashion Shows</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Models</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Designers</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="nav__right">
+                    <ul class="nav__menu empire">
+                        <li class="">
+                            <a href="#ex1" rel="modal:open">Subscribe</a>
+                        </li>
+                    </ul>
+                    <div class="nav__right-item nav__search d-none d-sm-block">
+                        <a href="search.html" class="nav__search-trigger" id="nav__search-trigger">
+                            <svg class="nav__search-trigger-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50" style=" fill:#000000;">
+                                <path
+                                    d="M 7 4 C 5.3545455 4 4 5.3545455 4 7 L 4 43 C 4 44.645455 5.3545455 46 7 46 L 43 46 C 44.645455 46 46 44.645455 46 43 L 46 7 C 46 5.3545455 44.645455 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.554545 6 44 6.4454545 44 7 L 44 43 C 44 43.554545 43.554545 44 43 44 L 7 44 C 6.4454545 44 6 43.554545 6 43 L 6 7 C 6 6.4454545 6.4454545 6 7 6 z M 22.5 13 C 17.26514 13 13 17.26514 13 22.5 C 13 27.73486 17.26514 32 22.5 32 C 24.758219 32 26.832076 31.201761 28.464844 29.878906 L 36.292969 37.707031 L 37.707031 36.292969 L 29.878906 28.464844 C 31.201761 26.832076 32 24.758219 32 22.5 C 32 17.26514 27.73486 13 22.5 13 z M 22.5 15 C 26.65398 15 30 18.34602 30 22.5 C 30 26.65398 26.65398 30 22.5 30 C 18.34602 30 15 26.65398 15 22.5 C 15 18.34602 18.34602 15 22.5 15 z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <div class="mt-3 inputs">
+            <input type="text" class="form-search w-full" placeholder="Search...">
+        </div>
+    </div>
+
+
+    <!-- footer area start -->
+    <footer class="footer-area josans pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6 pt-5">
+                    <div class="footer-widget">
+                        <div class="logo-wrapper">
+                            <a href="index.html">
+                                <img class="logo lazyload p-0" data-src="assets/img/logo/logo-bottom.svg" alt="The Fashion Enthusiast Bottom Logo">
+                            </a>
+                        </div>
+                        <div class="content mt-5">
+                            <p class="info pl-3">Fashion Around Globally.</p>
+                        </div>
+                        <div class="content mt-4">
+                            <p class="info pl-3">Latest in Fashion, Brands, Celebrity Style, Models, Cosmetics, Jewels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 pt-5">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Explore</h4>
+                        <ul class="footer-content-list pl-3">
+                            <li class="content-item">
+                                <a href="#">home</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">latest</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">trending</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">fashion</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">beauty</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">fashion shows</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">models</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 pt-5">
+                    <div class="footer-widget border-left-0">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="footer-content-list pl-3">
+                            <li class="content-item">
+                                <a href="#">Trends</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Celebrity Style</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Luxury House</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Cosmetics</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Runway</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Jewellery</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 pt-5">
+                    <div class="footer-widget border-left-0">
+                        <h4 class="widget-title">Fashion</h4>
+                        <ul class="footer-content-list pl-3">
+                            <li class="content-item">
+                                <a href="#">Fashion Week</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="">Spring Fashion</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Summer Fashion</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Fall Fashion</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Winter Fashion</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Super Models</a>
+                            </li>
+                            <li class="content-item">
+                                <a href="#">Emerging Models</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- component -->
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="w-full mt-10">
+                        <div class="px-3 pt-3 pb-4 -mx-4">
+                            <div class="mx-auto footer-widget">
+                                <h4 class="widget-title">Newsletter</h4>
+                                <div class="border-pnk pl-3">
+                                    <h2 class="text-xl text-left font-thin text-white">Join Our Newsletter</h2>
+                                    <form action="#" class="mt-3">
+                                        <div class="flex items-center">
+                                            <input type="email" class="w-full px-2 py-3 mr-2  bg-gray-100 shadow-inner border border-gray-400 focus:outline-none" required>
+                                            <button class="bg-pnk text-white px-4 py-2 shadow-2xl" style="margin-left: -7.8rem;">Subscribe</button>
+                                        </div>
+                                    </form>
+                                    <div class="social-icon mt-4">
+                                        <ul class="social-link-list style-02 pl-3">
+                                            <li class="link-item">
+                                                <a href="#">
+                                                    <i class='lab la-facebook-f facebook icon'></i>
+                                                </a>
+                                            </li>
+                                            <li class="link-item">
+                                                <a href="#">
+                                                    <i class='lab la-instagram instagram icon'></i>
+                                                </a>
+                                            </li>
+                                            <li class="link-item">
+                                                <a href="#">
+                                                    <i class='lab la-twitter twitter icon'></i>
+                                                </a>
+                                            </li>
+                                            <li class="link-item">
+                                                <a href="#">
+                                                    <i class='lab la-linkedin-in linkedin icon'></i>
+                                                </a>
+                                            </li>
+                                            <li class="link-item">
+                                                <a href="#">
+                                                    <i class='lab la-youtube youtube icon'></i>
+                                                </a>
+                                            </li>
+                                            <li class="link-item">
+                                                <a href="#">
+                                                    <i class='lar la-envelope youtube icon'></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="w-full mt-10">
+                        <div class="px-3 pt-3 pb-4 -mx-4">
+                            <div class="mx-auto footer-widget">
+                                <h4 class="widget-title">About Us</h4>
+                                <ul class="footer-content-list pl-3">
+                                    <li class="content-item">
+                                        <a href="#">Who are We</a>
+                                    </li>
+                                    <li class="content-item">
+                                        <a href="#">contact us</a>
+                                    </li>
+                                    <li class="content-item">
+                                        <a href="#">advertise</a>
+                                    </li>
+                                    <li class="content-item">
+                                        <a href="#">TFE Team</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6">
+                    <div class="w-full mt-10">
+                        <div class="px-4 pt-3 pb-4 -mx-4">
+                            <div class="mx-auto footer-widget">
+                                <h4 class="widget-title2">&nbsp;</h4>
+                                <ul class="footer-content-list pl-3">
+                                    <li class="content-item">
+                                        <a href="#">privacy notice</a>
+                                    </li>
+                                    <li class="content-item">
+                                        <a href="#">terms of use</a>
+                                    </li>
+                                    <li class="content-item">
+                                        <a href="#">sitemap</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom pt-20 pb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="w-100 lg:w-50">
+                            <div class="d-flex align-items-center text-xs md:text-sm uppercase text-white josans">A PART OF&nbsp;
+                                <a href="https://ninedayswondermedia.netlify.app/" target="_blank">
+                                    <img class="company-logo lazyload" data-src="assets/img/logo/logowhite.png" alt="Nine Day's Wonder Media Network Logo">
+                                </a>
+                            </div>
+                            <p class="text-xs md:text-sm uppercase text-white mt-4 josans">EVERY ITEM ON THIS PAGE WAS CHOSEN BY THE the fashion enthusiast TEAM. </p>
+                            <p class="text-xs md:text-sm uppercase text-white mt-4 josans">the fashion enthusiast may receive compensation for some links to products and services on this website. </p>
+                            <p class="text-xs md:text-sm uppercase text-white mt-4 josans">THIS WEBSITE IS POWERED by <span class="footer-com"><a class="text-dec-pink" target="_blank" href="https://ninedayswondermedia.netlify.app/" alt="Nine Day's Wonder Media Network Logo">nine days' wonder media network.</a></span> </p>
+                            <p class="text-xs md:text-sm uppercase text-white mt-4 josans">©
+                                <script type="text/javascript">
+                                    document.write(new Date().getFullYear());
+                                </script><span class="text-pnk"> THE FASHION ENTHUSIAST</span> ALL RIGHTS RESERVED.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class="las la-angle-double-up"></i>
+        <i class="las la-angle-double-up"></i>
+    </div>
+    <!-- End Go Top Area -->
+
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lazysizes.min.js"></script>
+    <script src="assets/js/ls.unveilhooks.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script src="assets/js/plyr.js"></script>
+    <script src="assets/js/jquery.modal.min.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7F5HRH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

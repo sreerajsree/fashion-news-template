@@ -1,0 +1,267 @@
+.button {
+    font-family: "MB Empire W01 Book", sans-serif !important;
+    --offset: 10px;
+    --border-size: 1.0px;
+    display: block;
+    position: relative;
+    padding: 0.4em 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+    outline: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 0;
+    transition: background 0.8s ease;
+    bottom: 320px;
+}
+
+.button:hover {
+    background: rgba(100, 0, 0, 0.03);
+}
+
+.button__horizontal,
+.button__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform 0.8s ease;
+    will-change: transform;
+}
+
+.button__horizontal::before,
+.button__vertical::before {
+    content: "";
+    position: absolute;
+    border: inherit;
+}
+
+.button__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+}
+
+.button__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+}
+
+.button:hover .button__horizontal {
+    transform: scaleX(0);
+}
+
+.button__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+}
+
+.button__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+}
+
+.button:hover .button__vertical {
+    transform: scaleY(0);
+}
+
+.item-wrapper {
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    padding: 4px;
+}
+
+.item-wrapper .line {
+    background-color: #e9be48;
+    position: absolute;
+}
+
+.item-wrapper .line span {
+    background-color: #e3e3e3;
+    position: inherit;
+    display: block;
+    transition: all 0.4s ease-out;
+}
+
+.item-wrapper .line-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+}
+
+.item-wrapper .line-right {
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+}
+
+.item-wrapper .line-bottom {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+}
+
+.item-wrapper .line-left {
+    left: 0;
+    bottom: 0;
+    width: 8px;
+    height: 100%;
+}
+
+.item-wrapper .line-top span {
+    top: inherit;
+    left: inherit;
+    width: 0;
+    height: 100%;
+}
+
+.item-wrapper .line-right span {
+    top: inherit;
+    right: inherit;
+    width: 100%;
+    height: 0;
+}
+
+.item-wrapper .line-bottom span {
+    right: inherit;
+    bottom: inherit;
+    width: 0;
+    height: 100%;
+}
+
+.item-wrapper .line-left span {
+    left: inherit;
+    bottom: inherit;
+    width: 100%;
+    height: 0;
+}
+
+.item-wrapper:hover .line-top span,
+.item-wrapper:hover .line-bottom span {
+    width: 100%;
+}
+
+.item-wrapper:hover .line-left span,
+.item-wrapper:hover .line-right span {
+    height: 100%;
+}
+
+.item-wrapper>.item {
+    padding: 40px 30px;
+    text-align: justify;
+}
+
+.item-wrapper>.item>h2 {
+    font-family: "MB Empire W01 Book", sans-serif !important;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.item-wrapper>.item>h2 .title {
+    font-family: "MB Empire W01 Book", sans-serif !important;
+    color: #eaab00;
+    font-weight: 800;
+}
+
+.item-wrapper>.item>p {
+    font-family: "SaolDisplay-Regular";
+    font-weight: bold;
+    padding: 40px 0;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 575px) {
+    .item-wrapper>.item>h2 {
+        font-size: 22px;
+    }
+    .item-wrapper>.item>p {
+        font-size: 20px;
+    }
+    .subscribe-image-height {
+        height: 240px;
+    }
+}
+
+.loader {
+    width: 120px;
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.loader span {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.ball {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fc2779;
+    animation: bounce .5s alternate infinite;
+}
+
+.ball:nth-child(2) {
+    animation-delay: .16s;
+}
+
+.ball:nth-child(3) {
+    animation-delay: .32s;
+}
+
+@keyframes bounce {
+    from {
+        transform: scale(1.25);
+    }
+    to {
+        transform: translateY(-50px) scale(1);
+    }
+}
+
+.fade-box .lazyload,
+.fade-box .lazyloading {
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.fade-box img.lazyloaded {
+    opacity: 1;
+}
+
+.fade-box div.lazyloaded {
+    opacity: 1;
+}
+
+.plyr__control--overlaid {
+    background: #fc2779 !important;
+}
+
+.video-section-padding {
+    padding: 3rem;
+}
+
